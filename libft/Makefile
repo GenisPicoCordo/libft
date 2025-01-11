@@ -67,7 +67,7 @@ BONUS = ft_lstnew_bonus.c \
 
 BONUS_OBJ = $(BONUS:.c=.o)
 
-CC = gcc -Wall -Werror -Wextra
+CC = cc -Wall -Werror -Wextra
 
 %.o: %.c libft.h Makefile
 	$(CC) -I. -c $< -o $(<:.c=.o)
